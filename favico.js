@@ -162,7 +162,7 @@
          */
         icon.reset = function () {
             //reset
-            if (!_ready) {
+            if (!_ready || !_browser.supported) {
                 return;
             }
             _queue = [];
